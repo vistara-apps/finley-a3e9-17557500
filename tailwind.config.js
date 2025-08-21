@@ -1,4 +1,3 @@
-
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
@@ -11,6 +10,10 @@ module.exports = {
         primary: 'hsl(210, 40%, 50%)',
         surface: 'hsl(210, 30%, 15%)',
         'secondary-text': 'hsl(0, 0%, 60%)',
+        error: 'hsl(0, 80%, 60%)',
+        success: 'hsl(130, 50%, 60%)',
+        warning: 'hsl(40, 80%, 60%)',
+        info: 'hsl(210, 60%, 60%)',
       },
       spacing: {
         sm: '8px',
@@ -25,6 +28,10 @@ module.exports = {
       boxShadow: {
         card: '0 4px 12px hsla(0, 0%, 0%, 0.2)',
         focus: '0 0 0 3px hsla(130, 50%, 60%, 0.5)',
+        error: '0 0 0 3px hsla(0, 80%, 60%, 0.5)',
+        success: '0 0 0 3px hsla(130, 50%, 60%, 0.5)',
+        warning: '0 0 0 3px hsla(40, 80%, 60%, 0.5)',
+        info: '0 0 0 3px hsla(210, 60%, 60%, 0.5)',
       },
       animation: {
         'fade-in': 'fadeIn 200ms ease-out',

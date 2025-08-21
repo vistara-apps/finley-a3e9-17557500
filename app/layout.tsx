@@ -1,4 +1,3 @@
-
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import "@coinbase/onchainkit/styles.css";
@@ -37,7 +36,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#1a1f2e" />
+        <meta name="color-scheme" content="dark" />
+      </head>
       <body>
+        <a href="#main-content" className="skip-to-content">
+          Skip to content
+        </a>
         <Providers>{children}</Providers>
       </body>
     </html>
