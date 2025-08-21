@@ -1,4 +1,3 @@
-
 "use client";
 
 import {
@@ -104,7 +103,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="flex-1 px-md">
+      <main id="main-content" className="flex-1 px-md" tabIndex={-1}>
         {currentView === 'onboarding' && (
           <OnboardingFlow onComplete={() => setCurrentView('dashboard')} />
         )}

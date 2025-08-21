@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +11,7 @@
     --primary: 210 40% 50%;
     --surface: 210 30% 15%;
     --secondary-text: 0 0% 60%;
+    --error: 0 80% 60%;
   }
   
   * {
@@ -23,19 +23,29 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
   }
+
+  /* Improve focus styles for keyboard navigation */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-opacity-70;
+  }
+
+  /* Skip to content link for keyboard users */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-bg focus:rounded-md;
+  }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-accent hover:bg-accent/90 text-bg px-4 py-2 rounded-md transition-all duration-base font-semibold;
+    @apply bg-accent hover:bg-accent/90 text-bg px-4 py-2 rounded-md transition-all duration-base font-semibold focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-70 active:bg-accent/80;
   }
   
   .btn-secondary {
-    @apply bg-surface hover:bg-surface/80 text-text border border-border px-4 py-2 rounded-md transition-all duration-base;
+    @apply bg-surface hover:bg-surface/80 text-text border border-border px-4 py-2 rounded-md transition-all duration-base focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-70 active:bg-surface/70;
   }
   
   .btn-outline {
-    @apply border border-accent text-accent hover:bg-accent hover:text-bg px-4 py-2 rounded-md transition-all duration-base;
+    @apply border border-accent text-accent hover:bg-accent hover:text-bg px-4 py-2 rounded-md transition-all duration-base focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-70 active:bg-accent/90;
   }
   
   .card {
@@ -48,6 +58,21 @@
   
   .input-field {
     @apply bg-surface border border-border rounded-md px-3 py-2 text-text placeholder:text-secondary-text focus:border-accent focus:shadow-focus focus:outline-none transition-all duration-base;
+  }
+  
+  /* Error state for input fields */
+  .input-field.error {
+    @apply border-red-500 focus:border-red-500;
+  }
+  
+  /* Focus state for interactive elements */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-70;
+  }
+  
+  /* Shadow for error states */
+  .shadow-error {
+    box-shadow: 0 0 0 3px hsla(0, 80%, 60%, 0.5);
   }
   
   .list-item {

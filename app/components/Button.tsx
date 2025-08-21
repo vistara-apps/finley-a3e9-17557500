@@ -1,4 +1,3 @@
-
 "use client";
 
 import { ReactNode, ButtonHTMLAttributes } from "react";
@@ -30,7 +29,8 @@ export function Button({
 
   return (
     <button 
-      className={`${baseClasses} ${sizeClasses} ${className} disabled:opacity-50 disabled:cursor-not-allowed`}
+      className={`${baseClasses} ${sizeClasses} ${className} disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 transition-all`}
+      aria-disabled={props.disabled}
       {...props}
     >
       {children}
