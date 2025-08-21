@@ -1,0 +1,14 @@
+{
+  "name": "Finley",
+  "description": "Finley is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://a3e9e027-213f-4425-b799-4a0c323133d6.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "Finley",
+      "description": "Finley is a Base Mini App built with Zara.",
+      "url": "https://a3e9e027-213f-4425-b799-4a0c323133d6.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
