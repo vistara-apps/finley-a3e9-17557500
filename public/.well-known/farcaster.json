@@ -10,14 +10,14 @@
     "subtitle": "Built with Zara",
     "description": "Finley is a Base Mini App built with Zara.",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://a3e9e027-213f-4425-b799-4a0c323133d6.vistara.dev",
-    "splashImageUrl": "https://dummyimage.com/200x200/0a0b0d/ffffff.png&text=Splash",
+    "homeUrl": "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app",
+    "splashImageUrl": "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
-    "heroImageUrl": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Hero",
+    "heroImageUrl": "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app/image.png",
     "tagline": "Finley",
     "screenshotUrls": [
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot1",
-      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot2"
+      "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app/screenshot.png",
+      "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app/screenshot.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -25,6 +25,6 @@
       "miniapp",
       "onchainkit"
     ],
-    "webhookUrl": "https://a3e9e027-213f-4425-b799-4a0c323133d6.vistara.dev/api/webhook"
+    "webhookUrl": "https://a3e9e027213f4425b7994a0c323133d6-9tfr-2vkagk0mm-vistara.vercel.app/api/webhook"
   }
 }
